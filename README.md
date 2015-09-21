@@ -55,6 +55,7 @@ $.fn.Modal({
 Change modal size by changing size parameter . Available size are small ,  medium and large  
 
 Example : 
+---------------------------------------
 $.fn.Modal({
         'body': 'Modal content body text',
         'size' : 'medium'
@@ -64,6 +65,7 @@ $.fn.Modal({
 Ajax content load and set to modal content 
 
 Example : 
+-----------------------------------------
 $.post(url).done(function(e){
     $.fn.Modal({ 'body': e , // Modal content from ajax post
                  'size' : 'medium' });
@@ -73,6 +75,7 @@ $.post(url).done(function(e){
 Modal Heading text change . 
 
 Example : 
+-----------------------------------------
 $.fn.Modal({
         'body': 'Modal content body text',
         'heading' : 'Hello this is modal heading title',
@@ -83,6 +86,7 @@ $.fn.Modal({
 Modal Close button show / hide by changing true / false . By deafult it is true , 
 
 Example : 
+-----------------------------------------
 $.fn.Modal({
         'body': 'Modal content body text',
         'heading' : 'Hello this is modal heading title',
@@ -94,6 +98,7 @@ $.fn.Modal({
 Modal backdrop control by changing backdrop option
 
 Example : 
+-----------------------------------------
 $.fn.Modal({
         'body': 'Modal content body text',
         'heading' : 'Hello this is modal heading title',
