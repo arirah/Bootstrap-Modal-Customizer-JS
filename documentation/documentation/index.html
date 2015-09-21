@@ -1,0 +1,407 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Bootstrap Modal customizer V.1.1</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Arifur Rahman">
+	<meta name="copyright" content="Arifur Rahman">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-09-21T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='392',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-bootstrap-modal-customizer-v11">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li><a href="#change_modal_size" title="Change Modal Size">Change Modal Size</a></li>
+			<li><a href="#modal_content" title="Modal content ">Modal content </a></li>
+			<li><a href="#change_background" title="Change Background">Change Background</a></li>
+			<li><a href="#modal_border" title="Modal border">Modal border</a></li>
+			<li><a href="#modal_position" title="Modal position">Modal position</a></li>
+			<li><a href="#event_modal" title="Event modal">Event modal</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Arifur Rahman 2015<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Bootstrap Modal customizer V.1.1</h1>
+	
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 03/10/2011</li>
+	<li>latest update: 09/21/2015</li>
+	<li>by: Arifur Rahman</li>
+	<li><a href=""></a></li>
+	<li>email: <a href="mailto:&#104;&#109;&#97;&#114;&#105;&#102;&#117;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#104;&#109;&#97;&#114;&#105;&#102;&#117;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p>Thank you</p>
+	</section>
+	
+	<section id="installation">
+	<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+<p>
+	Bootstrap Modal customizer installation is very easy and simple . After downloading .zip archive file extract it into your project folder.</p>
+<p>
+	Then add js file into your HTML , See example :&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot; manifest=&quot; &quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --&gt;
+  &lt;title&gt;Bootstrap Modal &lt;/title&gt;
+  &lt;!-- Bootstrap --&gt;
+  &lt;!-- Latest compiled and minified CSS --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css&quot;&gt;
+  &lt;!-- Optional theme --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css&quot;&gt;
+  &lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;
+  &lt;!-- WARNING: Respond.js doesn&#39;t work if you view the page via file:// --&gt;
+  &lt;!--[if lt IE 9]&gt;
+      &lt;script src=&quot;https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js&quot;&gt;&lt;/script&gt;
+      &lt;script src=&quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+  &lt;!-- jQuery (necessary for Bootstrap&#39;s JavaScript plugins) --&gt;
+  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class=&quot;col-md-12&quot;&gt;
+    &lt;div class=&quot;col-md-3&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-9&quot;&gt;
+      &lt;button class=&quot;btn btn-md btn-warning button-1&quot; &gt; Hide Close Button &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;
+  &lt;!-- Latest compiled and minified JavaScript --&gt;
+  &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js&quot;&gt;&lt;/script&gt;
+  &lt;!-- &lt;script src=&quot;js/bootstrap-modal.js&quot;&gt;&lt;/script&gt; --&gt;
+  &lt;script src=&quot;js/bootstrap-modal.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+  $(&#39;.button-1&#39;).click(function(){
+    $.fn.Modal({
+      &#39;body&#39;: &#39;&lt;h1 class=&quot;text-center&quot;&gt; Close button hide &lt;/h1&gt; please refresh&#39;,
+      &#39;closeButton&#39; : false
+    });
+  });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<div>
+	&nbsp;</div>
+</section>
+<section id="change_modal_size">
+	<div class="page-header"><h3>Change Modal Size</h3><hr class="notop"></div>
+<div>
+	Change modal size by changing size parameter . Available size are small , &nbsp;medium and large &nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Example 1 :&nbsp;</strong></div>
+<pre class="prettyprint lang-js linenums">
+$.fn.Modal({
+        &#39;body&#39;: &#39;Body text&#39;,
+        &#39;size&#39; : &#39;medium&#39;
+      });</pre>
+<p>
+	<strong>Example 2 :&nbsp;</strong></p>
+<pre class="prettyprint lang-js linenums">
+$.fn.Modal({
+        &#39;body&#39;: &#39;Body text&#39;,
+        &#39;size&#39; : &#39;small&#39;
+      });</pre>
+<p>
+	<strong>Example 3 :&nbsp;</strong></p>
+<pre class="prettyprint lang-js linenums">
+$.fn.Modal({
+        &#39;body&#39;: &#39;Body text&#39;,
+        &#39;size&#39; : &#39;large&#39;
+      });</pre>
+</section>
+<section id="modal_content">
+	<div class="page-header"><h3>Modal content </h3><hr class="notop"></div>
+<div>
+	Change modal size by changing size parameter . Available size are small , &nbsp;medium and large &nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Example :&nbsp;</strong></div>
+<pre class="prettyprint lang-js linenums">
+$.fn.Modal({
+        &#39;body&#39;: &#39;Modal content body text&#39;,
+        &#39;size&#39; : &#39;medium&#39;
+      });</pre>
+<p>
+	&nbsp;</p>
+<p>
+	Ajax content load and set to modal content&nbsp;</p>
+<div>
+	<strong>Example :&nbsp;</strong></div>
+<pre class="prettyprint lang-js linenums">
+$.post(url).done(function(e){
+    $.fn.Modal({ &#39;body&#39;: <span style="font-family: Arial, Verdana, sans-serif;">e </span><span style="font-family: Arial, Verdana, sans-serif;">, // Modal content from ajax post</span>
+                 &#39;size&#39; : &#39;medium&#39; });
+});</pre>
+<p>
+	&nbsp;</p>
+<p>
+	Modal Heading text change .&nbsp;</p>
+<div>
+	<strong>Example :&nbsp;</strong></div>
+<pre class="prettyprint lang-js linenums">
+$.fn.Modal({
+        &#39;body&#39;: &#39;Modal content body text&#39;,
+        &#39;heading&#39; : &#39;Hello this is modal heading title&#39;,
+        &#39;size&#39; : &#39;medium&#39;
+      });</pre>
+<p>
+	&nbsp;</p>
+<p>
+	Modal Close button show / hide by changing true / false . By deafult it is true ,&nbsp;</p>
+<div>
+	<strong>Example :&nbsp;</strong></div>
+<pre class="prettyprint lang-js linenums">
+$.fn.Modal({
+        &#39;body&#39;: &#39;Modal content body text&#39;,
+        &#39;heading&#39; : &#39;Hello this is modal heading title&#39;,
+        &#39;size&#39; : &#39;medium&#39; ,
+        &#39;closeButton&#39; : false 
+      });</pre>
+<p>
+	&nbsp;</p>
+<p>
+	Modal backdrop control by changing backdrop option</p>
+<div>
+	<strong>Example :&nbsp;</strong></div>
+<pre class="prettyprint lang-js linenums">
+$.fn.Modal({
+        &#39;body&#39;: &#39;Modal content body text&#39;,
+        &#39;heading&#39; : &#39;Hello this is modal heading title&#39;,
+        &#39;size&#39; : &#39;medium&#39; ,
+        &#39;closeButton&#39; : false ,
+        &#39;backdrop&#39; : &#39;static&#39;
+      });</pre>
+<p>
+	&nbsp;</p>
+</section>
+<section id="change_background">
+	<div class="page-header"><h3>Change Background</h3><hr class="notop"></div>
+<p>
+	For modal background color change set background parameter &nbsp;. For Transparent background set css transparent RGB color .&nbsp;</p>
+<p>
+	&nbsp;</p>
+<div>
+	<strong>Example :&nbsp;</strong></div>
+<pre class="prettyprint lang-js linenums">
+$.fn.Modal({
+        &#39;body&#39;: &#39;Modal content body text&#39;,
+        &#39;size&#39; : &#39;medium&#39; ,
+        &#39;backgroundColor&#39; : &#39;blue&#39; // default color is #fff
+      });</pre>
+<div>
+	&nbsp;</div>
+<div>
+	Transparent background color with image body .&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<div>
+		<strong>Example :&nbsp;</strong></div>
+	<pre class="prettyprint lang-js linenums">
+$.fn.Modal({
+        &#39;body&#39;: &#39;&lt;img src=&quot;https:://www.vinnorokom.com/advertisement.png&quot;&gt;&#39;,
+        &#39;size&#39; : &#39;medium&#39; ,
+        &#39;backgroundColor&#39; : &#39;<span style="font-family: Consolas, 'Lucida Console', monospace;">rgba(255, 255, 255, 0)</span>&#39; // default color is #fff
+      });</pre>
+	<div>
+		&nbsp;</div>
+	<div>
+		<div>
+			Changing modal content text color &nbsp;see the example below</div>
+		<div>
+			&nbsp;</div>
+		<div>
+			<div>
+				<strong>Example :&nbsp;</strong></div>
+			<pre class="prettyprint lang-js linenums">
+$.fn.Modal({
+        &#39;color&#39; : &#39;red&#39;,
+        &#39;body&#39;: &#39;This is demo text color &#39;,
+        &#39;size&#39; : &#39;medium&#39; ,
+        });</pre>
+		</div>
+	</div>
+</div>
+<p>
+	&nbsp;</p>
+</section>
+<section id="modal_border">
+	<div class="page-header"><h3>Modal border</h3><hr class="notop"></div>
+<div>
+	By changing modal border parameters you can change modal border size and show / hide &nbsp;. &nbsp;</div>
+<div>
+	<b>&nbsp;</b></div>
+<div>
+	If you dont want to see border then set it to <strong>0px</strong></div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Example :&nbsp;</strong></div>
+<pre class="prettyprint lang-js linenums">
+$.fn.Modal({
+        &#39;body&#39;: &#39;Modal content body text&#39;,
+        &#39;size&#39; : &#39;medium&#39; ,
+        &#39;border&#39; : &#39;hide&#39;, //  By default shows border
+      });</pre>
+<p>
+	&nbsp;</p>
+<div>
+	Change border radius.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Example :&nbsp;</strong></div>
+<pre class="prettyprint lang-js linenums">
+$.fn.Modal({
+        &#39;body&#39;: &#39;Modal content body text&#39;,
+        &#39;size&#39; : &#39;medium&#39; ,
+        &#39;border&#39; : &#39;show&#39;,  
+        &#39;borderRadius&#39; : &#39;2px&#39;, // Modal border radius
+      });</pre>
+</section>
+<section id="modal_position">
+	<div class="page-header"><h3>Modal position</h3><hr class="notop"></div>
+<p>
+	By default modal started from top position and it is center &nbsp;. You can change position from top to bottom .&nbsp;</p>
+<div>
+	<strong>Example :&nbsp;</strong></div>
+<pre class="prettyprint lang-js linenums">
+$.fn.Modal({
+        &#39;body&#39;: &#39;Modal content body text&#39;,
+        &#39;size&#39; : &#39;medium&#39; ,
+        &#39;backdrop&#39; : &#39;static&#39; , 
+        &#39;positionY&#39; : &#39;20px&#39;  
+      });</pre>
+</section>
+<section id="event_modal">
+	<div class="page-header"><h3>Event modal</h3><hr class="notop"></div>
+<p>
+	You can call modal any event like button click , page on load .&nbsp;</p>
+<p>
+	See button click event</p>
+<p>
+	&nbsp;</p>
+<div>
+	<strong>Example :&nbsp;</strong></div>
+<div>
+	&nbsp;</div>
+<pre class="prettyprint lang-js linenums">
+$(&#39;#button_id&#39;).click(function(){
+   $.fn.Modal({
+          &#39;body&#39;: &#39;Button click modal&#39;,
+          &#39;size&#39; : &#39;medium&#39; ,
+        });
+});</pre>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<p class="prettyprint lang-js linenums">
+	Page onload modal content</p>
+<div>
+	<strong>Example :&nbsp;</strong></div>
+<div>
+	&nbsp;</div>
+<pre class="prettyprint lang-js linenums">
+$(document).ready(function(){
+   $.fn.Modal({
+        &#39;body&#39;: &#39;&lt;img src=&quot;https:://www.vinnorokom.com/advertisement.png&quot;&gt;&#39;,
+        &#39;size&#39; : &#39;medium&#39; ,
+        &#39;backgroundColor&#39; : &#39;rgba(255, 255, 255, 0)&#39; // default color is #fff
+      });
+});</pre>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+</section>
+
+	</div>
+</body>
+</html>
