@@ -2,6 +2,12 @@
 Simple js file for modal content customization. 
 By - Arifur Rahman
 
+Requirement : 
+---------------------------------------
+Bootstrap CSS  , 
+Jquery Library 
+
+
 
 Installation :
 ---------------------------------------
